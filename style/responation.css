@@ -1,0 +1,67 @@
+@media screen and (max-width:768px) {
+    .main_content1 .image2 img,
+    .main_content1 .image2 .paragraph {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:958px) {
+    .svgMenu {
+        display: none;
+    }
+    .header .center_content {
+        display: flex;
+    }
+    .header .left_content {
+        width: max-content;
+    }
+    .call .image3 {
+        flex-direction: row;
+    }
+    .call .image3 .online {
+        width: 40%;
+    }
+    .call .image3 .form {
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .call .image3 .form .name {
+        width: 100px;
+    }
+    .optionDevelopers {
+        flex-direction: row;
+    }
+    .optionDevelopers .tableContainer .tableContent {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: 0;
+    }
+    .optionDevelopers .tableContainer .tableContent div p {
+        font-size: 14px;
+    }
+    .phoneStyle {
+        flex-direction: row;
+    }
+    .conectContainer .conect {
+        flex-direction: row;
+    }
+    .container4 .siteDsignText {
+        flex-direction: row;
+    }
+    .table2 h2 {
+        font-size: 19px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .main_content1 .image2 img {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:900px) and (min-width:600px) and (max-height:1200px) and (min-height:900px) {
+    * {
+        font-size: 26px;
+    }
+}
