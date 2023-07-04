@@ -47,7 +47,7 @@ body {
     font-family: fontname;
 }
 
-.grandFather {
+main{
     max-width: 1366px;
     margin: auto;
 }
