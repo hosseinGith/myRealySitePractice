@@ -48,7 +48,7 @@ body {
 }
 
 .grandFather {
-    max-width: 1200px;
+    max-width: 1366px;
     margin: auto;
 }
 
@@ -62,7 +62,7 @@ header {
 }
 
 .header {
-    max-width: 1200px;
+    max-width: 1366px;
     transition: translateX(100%);
     width: 95%;
     padding: 0 8px;
