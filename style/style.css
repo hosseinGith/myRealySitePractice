@@ -1,9 +1,4 @@
 @font-face {
-    font-family: header;
-    src: url(../fonts/Neirizi.ttf) format('truetype');
-}
-
-@font-face {
     font-family: 'FontName';
     src: url(../fonts/font1/Gandom.ttf) format('truetype');
     src: url(../fonts/font1/Gandom.woff) format('woff');
@@ -49,12 +44,12 @@ body {
     width: 100%;
     min-height: 100vh;
     position: relative;
+    font-family: fontname;
 }
 
-.main_content1 {
-    width: 100%;
-    background-color: #e4edf6;
-    overflow-x: hidden;
+.grandFather {
+    max-width: 1200px;
+    margin: auto;
 }
 
 header {
@@ -67,10 +62,8 @@ header {
 }
 
 .header {
+    max-width: 1200px;
     transition: translateX(100%);
-    top: 20px;
-    left: 30px;
-    font-family: header;
     width: 95%;
     padding: 0 8px;
     padding-top: 6px;
@@ -202,9 +195,9 @@ header {
     top: 70px;
     padding: 15px;
     border-radius: 20px;
-    display: none;
     overflow: hidden;
     box-shadow: 0 0 3px .5px gray;
+    display: none;
 }
 
 .header .menu a {
@@ -220,26 +213,45 @@ header {
     display: none;
 }
 
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main_content1 {
+    width: 100%;
+    background-color: #e4edf6;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .main_content1 .image2 {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 30px 0;
+    text-align: center;
+    margin: 100px 0;
+}
+
+.main_content1 .image2 .imageMainContent {
+    width: 100%;
 }
 
 .main_content1 .image2 img {
-    width: 40%;
+    width: 100%;
+    min-width: 80%;
     display: inline-block;
-    margin-top: 40px;
 }
 
 .main_content1 .paragraph {
-    width: 60%;
-    display: inline-block;
-    text-align: center;
-    margin: 100px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding: 10px;
 }
 
@@ -261,9 +273,10 @@ header {
     width: 100%;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
-    font-family: FontName;
     font-size: 15px;
 }
 
@@ -402,7 +415,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: fontname;
     margin: 60px 0 0 20px;
     text-align: justify;
 }
@@ -579,7 +591,6 @@ header {
     border-radius: 20px;
     padding: 10px;
     font-size: 16px;
-    font-family: fontname;
 }
 
 .phoneBorder {
@@ -589,10 +600,12 @@ header {
     justify-content: center;
     flex-direction: column;
     padding: 20px;
+    z-index: 4;
 }
 
 .phoneBorder .phoneInsideBorder {
-    width: 256px;
+    width: 100%;
+    max-width: 256px;
     height: 500px;
     padding: 10px;
     border-radius: 20px;
@@ -603,6 +616,7 @@ header {
 
 .phoneBorder .phoneInsideBorder .phoneContainer {
     height: 100%;
+    width: 100%;
     border-radius: 20px;
     position: relative;
     background-color: rgb(255, 255, 255);
@@ -655,15 +669,16 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 30px 0;
+    margin: 10px 0;
 }
 
 .phoneBorder .phoneInsideBorder .phoneContent div {
     text-align: center;
     padding: 10px;
     font-size: 12px;
-    width: 150px;
-    margin: 10px 0;
+    width: 100%;
+    max-width: 150px;
+    margin: 1%;
     border-radius: 10px;
 }
 
@@ -704,7 +719,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: fontname;
     padding: 30px;
 }
 
@@ -797,7 +811,6 @@ header {
     width: 100%;
     padding: 30px 30px;
     background-color: #0066ff17;
-    font-family: fontname;
     display: flex;
     justify-content: center;
     flex-direction: column;
