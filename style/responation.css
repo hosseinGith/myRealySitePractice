@@ -15,6 +15,15 @@
     .header .left_content {
         width: max-content;
     }
+    .header nav.navbarContainer {
+        display: none;
+    }
+    .main_content1 .image2 {
+        flex-direction: row;
+    }
+    .abouts {
+        flex-direction: row;
+    }
     .call .image3 {
         flex-direction: row;
     }
