@@ -746,6 +746,7 @@ main {
 }
 
 .conect .images {
+    width: 100%;
     max-height: 150px;
     display: flex;
     align-items: center;
@@ -756,6 +757,7 @@ main {
 
 .conect .images img {
     border-radius: 50%;
+    width: 100%;
     max-width: 120px;
     margin: 0 -20px;
     cursor: pointer;
