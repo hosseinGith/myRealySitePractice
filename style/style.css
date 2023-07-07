@@ -47,9 +47,14 @@ body {
     font-family: fontname;
 }
 
-main{
+main {
     max-width: 1366px;
     margin: auto;
+    overflow-x: hidden;
+}
+
+main>div {
+    overflow-x: hidden;
 }
 
 header {
@@ -73,6 +78,7 @@ header {
     background-color: #fff;
     box-shadow: 0 0 10px 1px gainsboro;
     border-radius: 50px;
+    overflow: hidden;
 }
 
 .header .right_content {
@@ -374,7 +380,6 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 5px;
-    padding: 20px 0;
 }
 
 .call .image3 .form input {
@@ -382,6 +387,11 @@ main {
     outline: none;
     border: 0;
     padding: 0 20px;
+}
+
+.call .image3 .form input:nth-child(2) {
+    width: 100%;
+    max-width: 200px;
 }
 
 .call .image3 .form .number {
@@ -719,7 +729,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 .conectContainer .conect {
@@ -736,15 +746,30 @@ main {
 }
 
 .conect .images {
-    width: 100%;
+    max-height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px 0;
+    margin: 40px 0;
+    direction: ltr;
 }
 
 .conect .images img {
-    width: 250px;
+    border-radius: 50%;
+    max-width: 120px;
+    margin: 0 -20px;
+    cursor: pointer;
+    image-orientation: 16/9;
+}
+
+.conect .images:hover>* {
+    opacity: .3;
+}
+
+.conect .images>*:hover {
+    opacity: 1;
+    transform: scale(1.5);
+    z-index: 4;
 }
 
 .conectContainer .conect .infoThisContainer {
@@ -755,7 +780,6 @@ main {
 .conectContainer .conect h3,
 .conectContainer .conect .buttons span {
     color: #fff;
-    cursor: pointer;
 }
 
 .conectContainer .conect .buttons {
@@ -779,9 +803,8 @@ main {
     color: #5900ff;
     border-radius: 20px;
     background-color: #fff;
-    animation: span 1s infinite linear alternate;
+    animation: span .5s infinite linear alternate;
     text-align: center;
-    padding: 10px 30px;
 }
 
 .conectContainer .conect .buttons span {
