@@ -656,7 +656,7 @@ header {
     right: 50%;
     transform: translateX(50%);
     height: 50px;
-    clip-path: polygon(51% 24%, 100% 23%, 100% 55%, 88% 57%, 85% 85%, 19% 85%, 18% 57%, 0 56%, 0 24%);
+    clip-path: polygon(51% 24%, 100% 23%, 100% 55%, 88% 36%, 87% 85%, 19% 85%, 18% 57%, 0 56%, 0 24%);
     background-color: rgba(4, 2, 32, 0.815);
 }
 
