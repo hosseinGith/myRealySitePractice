@@ -243,11 +243,6 @@ header {
     font-size: 12px;
 }
 
-main {
-    max-width: 1200px;
-    margin: auto;
-}
-
 .main_content1 {
     width: 100%;
     background-color: #e4edf6;
