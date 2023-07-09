@@ -146,13 +146,15 @@ header {
 
 .header .center_content>ul>li>ul {
     display: none;
+    min-width: 200px;
     position: absolute;
     background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
     flex-direction: column;
     list-style-type: none;
     padding: 5px 20px;
     gap: 10px;
-    border-radius:20px;
+    border-radius: 20px;
 }
 
 .header .center_content>ul>li>ul li a:hover {
