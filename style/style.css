@@ -24,22 +24,6 @@
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-    width: 7px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: rgb(199, 199, 199);
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgb(133, 133, 133);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 0, 0, 0.664);
-}
-
 body {
     width: 100%;
     min-height: 100vh;
@@ -168,13 +152,13 @@ header {
     align-items: center;
 }
 
-.header .left_content span.svgMenu {
+.header .left_content .svgMenu {
     padding: 10px;
     margin: 5px;
 }
 
-.header .left_content>span.svgMenu svg {
-    width: 25px;
+.header .left_content>.svgMenu {
+    width: 45px;
     margin: 0 5px;
 }
 
@@ -192,18 +176,28 @@ header {
     fill: #fff;
 }
 
-.header .menu {
+.headerNav {
     width: 100%;
-    height: 179px;
-    margin: auto -10px;
-    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    display: none;
+    position: fixed;
+    padding: 2px 10px;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+.header .menu {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 20px 0;
+    max-width: 350px;
+    height: 100%;
     background-color: #fff;
-    top: 70px;
     padding: 15px;
     border-radius: 20px;
-    overflow: hidden;
     box-shadow: 0 0 3px .5px gray;
-    display: none;
 }
 
 .header .menu a {
@@ -211,12 +205,25 @@ header {
     display: block;
 }
 
-.header .menu a:hover {
+.header .menu span:hover>ul {
+    display: flex;
+}
+
+.header .menu a:hover,
+.header .menu span:hover {
     color: brown;
+    cursor: pointer;
 }
 
 .header .menu ul {
+    width: 100%;
     display: none;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.header .menu ul li a {
+    font-size: 12px;
 }
 
 main {
@@ -298,8 +305,7 @@ main {
     overflow: hidden;
 }
 
-.abouts .about1 .title,
-.abouts .about2 .title {
+.abouts .title {
     border-right: 5px solid var(--borders);
     padding: 12px 20px;
     margin: 25px 0;
@@ -309,13 +315,11 @@ main {
     font-size: 18px;
 }
 
-.abouts .about1 .title span,
-.abouts .about2 .title span {
+.abouts .title span {
     color: rgb(0, 179, 255);
 }
 
-.abouts .about1 a,
-.abouts .about2 a {
+.abouts a {
     font-size: 15.9px;
     color: #004cff;
 }
